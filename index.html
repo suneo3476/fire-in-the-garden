@@ -5,24 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Fire in the Garden</title>
 
-    <!-- Monogatari CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@monogatari/core@2.0.0/dist/engine/core.min.css">
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style/main.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Serif JP', serif;
+            background: #000;
+            color: #fff;
+        }
+
+        #game-container {
+            max-width: 1080px;
+            margin: 0 auto;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        #characters {
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 50px;
+            pointer-events: none;
+        }
+
+        .character {
+            max-height: 80vh;
+            max-width: 400px;
+            object-fit: contain;
+            transition: opacity 0.5s;
+        }
+
+        #text-box {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 30px 40px;
+            min-height: 150px;
+            border-top: 3px solid #4169E1;
+        }
+
+        #speaker-name {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: 700;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #4169E1;
+        }
+
+        #dialogue-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        #choices {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .choice-button {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 1.1em;
+            padding: 20px 40px;
+            background: rgba(102, 126, 234, 0.9);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            min-width: 300px;
+        }
+
+        .choice-button:hover {
+            background: rgba(102, 126, 234, 1);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+        }
+
+        .choice-button:disabled {
+            background: rgba(100, 100, 100, 0.5);
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        #centered-text {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.3em;
+            text-align: center;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 12px;
+            max-width: 80%;
+            line-height: 1.8;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-    <div id="monogatari">
-        <div class="middle-screen">
-            <p>Loading...</p>
+    <div id="game-container">
+        <div id="background"></div>
+        <div id="characters"></div>
+        <div id="text-box" class="hidden">
+            <div id="speaker-name"></div>
+            <div id="dialogue-text"></div>
         </div>
+        <div id="choices"></div>
+        <div id="centered-text" class="hidden"></div>
     </div>
 
-    <!-- Monogatari Core -->
-    <script src="https://cdn.jsdelivr.net/npm/@monogatari/core@2.0.0/dist/engine/core.min.js"></script>
+    <!-- Game Engine (Simple Custom Implementation) -->
+    <script src="js/engine.js"></script>
 
     <!-- Game Configuration -->
     <script src="js/main.js"></script>
@@ -35,9 +171,7 @@
 
     <!-- Initialize -->
     <script>
-        Monogatari.init('#monogatari').then(() => {
-            console.log('Fire in the Garden initialized!');
-        });
+        GameEngine.init();
     </script>
 </body>
 </html>
