@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Fire in the Garden</title>
+
+    <!-- Monogatari CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@monogatari/core@2.0.0/dist/engine/core.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div id="monogatari">
+        <div class="middle-screen">
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Monogatari Core -->
+    <script src="https://cdn.jsdelivr.net/npm/@monogatari/core@2.0.0/dist/engine/core.min.js"></script>
+
+    <!-- Game Configuration -->
+    <script src="js/main.js"></script>
+
+    <!-- Characters -->
+    <script src="js/characters.js"></script>
+
+    <!-- Game Script -->
+    <script src="js/script.js"></script>
+
+    <!-- Initialize -->
+    <script>
+        Monogatari.init('#monogatari').then(() => {
+            console.log('Fire in the Garden initialized!');
+        });
+    </script>
+</body>
+</html>
