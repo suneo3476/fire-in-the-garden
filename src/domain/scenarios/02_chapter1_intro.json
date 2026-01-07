@@ -1,0 +1,25 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "sceneId": "chapter1_intro",
+  "title": "第1章 導入",
+  "background": "interrogation_room",
+  "bgm": "bgm_investigation",
+  "dialogues": [
+    {
+      "speaker": "detective",
+      "displayCharacter": "detective",
+      "text": "Thank you for requesting！\n豪邸の庭園が燃えた事件。\n美しく、珍しい草花は根こそぎ焼失。\n言っておくが今回は\nあなたもあなたもあなたもあなたも\nすべてが疑わしい。\n君さえもね。"
+    },
+    {
+      "speaker": "assistant",
+      "displayCharacter": "assistant",
+      "text": "何言ってんの？\n私は助手ですよ。\nさて、この難問を解く鍵は。\nあなたは何を知っている？\nなぜ笑うのかも教えてほしい。"
+    },
+    {
+      "speaker": "police",
+      "displayCharacter": "police",
+      "text": "楽しいから笑うのですよ。\n愉快な事件、ですからね。\n捜査の結果、\n金品、一切奪われておらず。\n怪我人、負傷者、1人もおらず。\n犯人の目的はなんでしょう？\n相棒が探し当ててくれるでしょう。"
+    }
+  ],
+  "nextScene": "chapter1_interrogation_select"
+}

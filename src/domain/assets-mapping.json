@@ -1,0 +1,254 @@
+{
+  "$schema": "./schemas/assets-mapping.schema.json",
+  "description": "素材ファイルとゲーム内アセットの紐付け。このファイルを編集することで、どの素材をどこで使うか自由に変更できます。",
+  "characters": {
+    "player_default": {
+      "name": "ヨウ・デンジャー・ドッグ（デフォルト）",
+      "filePath": "assets/characters/player_default.png",
+      "description": "主人公の立ち絵（デフォルト表情）",
+      "status": "未配置"
+    },
+    "police_default": {
+      "name": "警察（デフォルト）",
+      "filePath": "assets/characters/police_default.png",
+      "description": "警察の立ち絵（デフォルト表情）",
+      "status": "未配置"
+    },
+    "detective_default": {
+      "name": "探偵（デフォルト）",
+      "filePath": "assets/characters/detective_default.png",
+      "description": "探偵の立ち絵（デフォルト表情）",
+      "status": "未配置"
+    },
+    "assistant_default": {
+      "name": "探偵助手（デフォルト）",
+      "filePath": "assets/characters/assistant_default.png",
+      "description": "探偵助手の立ち絵（デフォルト表情）",
+      "status": "未配置"
+    },
+    "master_default": {
+      "name": "庭園の主（デフォルト）",
+      "filePath": "assets/characters/master_default.png",
+      "description": "庭園の主の立ち絵（デフォルト表情）",
+      "status": "未配置"
+    },
+    "firefighter_default": {
+      "name": "消防士（デフォルト）",
+      "filePath": "assets/characters/firefighter_default.png",
+      "description": "消防士の立ち絵（デフォルト表情）",
+      "status": "未配置"
+    },
+    "gardener_default": {
+      "name": "庭師（デフォルト）",
+      "filePath": "assets/characters/gardener_default.png",
+      "description": "庭師の立ち絵（デフォルト表情）",
+      "status": "未配置"
+    },
+    "painter_default": {
+      "name": "画家（デフォルト）",
+      "filePath": "assets/characters/painter_default.png",
+      "description": "画家の立ち絵（デフォルト表情）",
+      "status": "未配置"
+    },
+    "apprentice_default": {
+      "name": "画家見習い（デフォルト）",
+      "filePath": "assets/characters/apprentice_default.png",
+      "description": "画家見習いの立ち絵（デフォルト表情）",
+      "status": "未配置"
+    },
+    "white_flower_default": {
+      "name": "白い花（デフォルト）",
+      "filePath": "assets/characters/white_flower_default.png",
+      "description": "白い花（人型植物）の立ち絵（デフォルト表情）",
+      "status": "未配置"
+    }
+  },
+  "backgrounds": {
+    "start_screen": {
+      "name": "スタート画面",
+      "filePath": "assets/backgrounds/start_screen.png",
+      "description": "スタート画面の背景",
+      "status": "未配置"
+    },
+    "garden_day": {
+      "name": "庭園（昼）",
+      "filePath": "assets/backgrounds/garden_day.png",
+      "description": "火事前の庭園（昼間）",
+      "status": "未配置"
+    },
+    "garden_night": {
+      "name": "庭園（夜）",
+      "filePath": "assets/backgrounds/garden_night.png",
+      "description": "庭園の夜景",
+      "status": "未配置"
+    },
+    "garden_fire": {
+      "name": "庭園（火事）",
+      "filePath": "assets/backgrounds/garden_fire.png",
+      "description": "燃えている庭園",
+      "status": "未配置"
+    },
+    "garden_aftermath": {
+      "name": "庭園（焼失後）",
+      "filePath": "assets/backgrounds/garden_aftermath.png",
+      "description": "火事後の庭園",
+      "status": "未配置"
+    },
+    "interrogation_room": {
+      "name": "聴取室",
+      "filePath": "assets/backgrounds/interrogation_room.png",
+      "description": "事情聴取を行う場所",
+      "status": "未配置"
+    }
+  },
+  "evidence": {
+    "evidence_blueprint": {
+      "name": "庭園の平面図",
+      "filePath": "assets/ui/evidence_blueprint.png",
+      "description": "庭園の平面図の画像",
+      "status": "未配置"
+    },
+    "evidence_journal": {
+      "name": "日誌（人型植物の記録）",
+      "filePath": "assets/ui/evidence_journal.png",
+      "description": "日誌の画像",
+      "status": "未配置"
+    },
+    "evidence_vine": {
+      "name": "ツタの傷",
+      "filePath": "assets/ui/evidence_vine.png",
+      "description": "ツタに巻きつかれた傷の画像",
+      "status": "未配置"
+    },
+    "evidence_candle": {
+      "name": "蝋燭のストラップ",
+      "filePath": "assets/ui/evidence_candle.png",
+      "description": "蝋燭ストラップの画像",
+      "status": "未配置"
+    },
+    "evidence_medal": {
+      "name": "勲章バッジ",
+      "filePath": "assets/ui/evidence_medal.png",
+      "description": "勲章バッジの画像",
+      "status": "未配置"
+    },
+    "evidence_shears": {
+      "name": "剪定ハサミ",
+      "filePath": "assets/ui/evidence_shears.png",
+      "description": "剪定ハサミの画像",
+      "status": "未配置"
+    },
+    "evidence_bag": {
+      "name": "カバン",
+      "filePath": "assets/ui/evidence_bag.png",
+      "description": "庭師のカバンの画像",
+      "status": "未配置"
+    },
+    "evidence_diary": {
+      "name": "画家の日記",
+      "filePath": "assets/ui/evidence_diary.png",
+      "description": "画家の日記の画像",
+      "status": "未配置"
+    },
+    "evidence_pencils": {
+      "name": "鉛筆",
+      "filePath": "assets/ui/evidence_pencils.png",
+      "description": "大量の鉛筆の画像",
+      "status": "未配置"
+    },
+    "evidence_branches": {
+      "name": "枝",
+      "filePath": "assets/ui/evidence_branches.png",
+      "description": "集めた枝の画像",
+      "status": "未配置"
+    },
+    "evidence_sand": {
+      "name": "砂",
+      "filePath": "assets/ui/evidence_sand.png",
+      "description": "浜辺の砂の画像",
+      "status": "未配置"
+    }
+  },
+  "ui": {
+    "button_start": {
+      "name": "出勤ボタン",
+      "filePath": "assets/ui/button_start.png",
+      "description": "スタート画面の「出勤」ボタン",
+      "status": "未配置"
+    },
+    "button_bite": {
+      "name": "BITEボタン",
+      "filePath": "assets/ui/button_bite.png",
+      "description": "推理パートで証拠を噛む時のボタン",
+      "status": "未配置"
+    },
+    "life_icon": {
+      "name": "ライフアイコン",
+      "filePath": "assets/ui/life_icon.png",
+      "description": "残りライフ表示用アイコン",
+      "status": "未配置"
+    },
+    "textbox": {
+      "name": "テキストボックス",
+      "filePath": "assets/ui/textbox.png",
+      "description": "セリフ表示用のテキストボックス",
+      "status": "未配置"
+    }
+  },
+  "bgm": {
+    "bgm_title": {
+      "name": "タイトル画面BGM",
+      "filePath": "assets/bgm/title.mp3",
+      "description": "スタート画面のBGM",
+      "status": "未配置",
+      "source": "DOVA-SYNDROME（候補：窓辺のドロップス / すもち）"
+    },
+    "bgm_investigation": {
+      "name": "調査BGM",
+      "filePath": "assets/bgm/investigation.mp3",
+      "description": "事情聴取シーンのBGM",
+      "status": "未配置",
+      "source": "DOVA-SYNDROME"
+    },
+    "bgm_deduction": {
+      "name": "推理BGM",
+      "filePath": "assets/bgm/deduction.mp3",
+      "description": "推理パートのBGM",
+      "status": "未配置",
+      "source": "DOVA-SYNDROME"
+    },
+    "bgm_truth": {
+      "name": "真相BGM",
+      "filePath": "assets/bgm/truth.mp3",
+      "description": "真相解明シーンのBGM",
+      "status": "未配置",
+      "source": "DOVA-SYNDROME"
+    }
+  },
+  "sfx": {
+    "sfx_bark": {
+      "name": "犬の鳴き声",
+      "filePath": "assets/sfx/bark.mp3",
+      "description": "ワン！という効果音",
+      "status": "未配置"
+    },
+    "sfx_bite": {
+      "name": "噛みつき音",
+      "filePath": "assets/sfx/bite.mp3",
+      "description": "ガブッ！という効果音",
+      "status": "未配置"
+    },
+    "sfx_wrong": {
+      "name": "不正解音",
+      "filePath": "assets/sfx/wrong.mp3",
+      "description": "間違えた時の効果音",
+      "status": "未配置"
+    },
+    "sfx_correct": {
+      "name": "正解音",
+      "filePath": "assets/sfx/correct.mp3",
+      "description": "正解した時の効果音",
+      "status": "未配置"
+    }
+  }
+}

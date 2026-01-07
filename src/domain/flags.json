@@ -1,0 +1,134 @@
+{
+  "$schema": "./schemas/flags.schema.json",
+  "description": "ゲーム内で使用するフラグ定義",
+  "flags": [
+    {
+      "id": "game_started",
+      "name": "ゲーム開始",
+      "type": "boolean",
+      "defaultValue": false,
+      "description": "出勤ボタンを押してゲームを開始したか"
+    },
+    {
+      "id": "chapter1_started",
+      "name": "第1章開始",
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "id": "interrogated_master",
+      "name": "庭園の主を聴取済み",
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "id": "interrogated_firefighter",
+      "name": "消防士を聴取済み",
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "id": "interrogated_gardener",
+      "name": "庭師を聴取済み",
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "id": "interrogated_painter",
+      "name": "画家を聴取済み",
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "id": "interrogated_apprentice",
+      "name": "画家見習いを聴取済み",
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "id": "all_interrogations_done",
+      "name": "全員聴取完了",
+      "type": "boolean",
+      "defaultValue": false,
+      "description": "5人全員の聴取が完了したか"
+    },
+    {
+      "id": "chapter2_started",
+      "name": "第2章開始",
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "id": "bite_life",
+      "name": "BITE残りライフ",
+      "type": "number",
+      "defaultValue": 3,
+      "description": "推理パートでの残りライフ（3回失敗でゲームオーバー）"
+    },
+    {
+      "id": "key_evidence_count",
+      "name": "有力証拠収集数",
+      "type": "number",
+      "defaultValue": 0,
+      "description": "5つ集めると第3章へ進む"
+    },
+    {
+      "id": "candle_strap_discovered",
+      "name": "蝋燭のストラップ発見",
+      "type": "boolean",
+      "defaultValue": false,
+      "description": "Mr.HBDを暴いた（勲章バッジが選択不可になる）"
+    },
+    {
+      "id": "gardener_bag_discovered",
+      "name": "庭師のカバン調査済み",
+      "type": "boolean",
+      "defaultValue": false,
+      "description": "改造バーナー発見（枝・砂の証拠が有効になる）"
+    },
+    {
+      "id": "human_plant_journal_discovered",
+      "name": "人型植物の日誌発見",
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "id": "painter_diary_discovered",
+      "name": "画家の日記発見",
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "id": "branches_discovered",
+      "name": "枝の証拠発見",
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "id": "sand_discovered",
+      "name": "砂の証拠発見",
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "id": "chapter3_started",
+      "name": "エピローグ開始",
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "id": "game_cleared",
+      "name": "ゲームクリア",
+      "type": "boolean",
+      "defaultValue": false,
+      "description": "画家見習いを正しく選んでクリア"
+    },
+    {
+      "id": "game_failed",
+      "name": "ゲーム失敗",
+      "type": "boolean",
+      "defaultValue": false,
+      "description": "間違った犯人を選択した"
+    }
+  ]
+}

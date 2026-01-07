@@ -1,0 +1,105 @@
+{
+  "$schema": "./schemas/characters.schema.json",
+  "characters": [
+    {
+      "id": "player",
+      "name": "ヨウ・デンジャー・ドッグ",
+      "nameJa": "ヨウ・デンジャー・ドッグ",
+      "nameEn": "You Danger Dog",
+      "role": "protagonist",
+      "description": "主人公。警察犬として事件解決に挑む。",
+      "assetKey": "player_default",
+      "color": "#8B4513"
+    },
+    {
+      "id": "police",
+      "name": "警察",
+      "nameJa": "警察",
+      "nameEn": "Police Officer",
+      "role": "partner",
+      "description": "プレイヤーのパートナー。相棒と呼ぶ。",
+      "assetKey": "police_default",
+      "color": "#4169E1"
+    },
+    {
+      "id": "detective",
+      "name": "探偵",
+      "nameJa": "探偵",
+      "nameEn": "Detective",
+      "role": "investigator",
+      "description": "事件を調査する探偵。常に探偵助手を疑っている。",
+      "assetKey": "detective_default",
+      "color": "#2F4F4F"
+    },
+    {
+      "id": "assistant",
+      "name": "探偵助手",
+      "nameJa": "探偵助手",
+      "nameEn": "Detective Assistant",
+      "role": "investigator",
+      "description": "探偵のアシスタント。真相を見抜く洞察力を持つ。",
+      "assetKey": "assistant_default",
+      "color": "#8B008B"
+    },
+    {
+      "id": "master",
+      "name": "庭園の主",
+      "nameJa": "庭園の主",
+      "nameEn": "Garden Master",
+      "role": "suspect",
+      "description": "豪邸の庭園の所有者。人型植物を育てている。",
+      "assetKey": "master_default",
+      "color": "#DAA520"
+    },
+    {
+      "id": "firefighter",
+      "name": "消防士",
+      "nameJa": "消防士",
+      "nameEn": "Firefighter",
+      "role": "suspect",
+      "description": "火災鎮火を担当した消防士。実はMr.HBD（連続放火魔）。",
+      "assetKey": "firefighter_default",
+      "color": "#DC143C"
+    },
+    {
+      "id": "gardener",
+      "name": "庭師",
+      "nameJa": "庭師",
+      "nameEn": "Gardener",
+      "role": "suspect",
+      "description": "庭園の管理を任されている。植物を愛している。",
+      "assetKey": "gardener_default",
+      "color": "#228B22"
+    },
+    {
+      "id": "painter",
+      "name": "画家",
+      "nameJa": "画家",
+      "nameEn": "Painter",
+      "role": "suspect",
+      "description": "有名な画家。白い花をモデルに絵を描いていた。",
+      "assetKey": "painter_default",
+      "color": "#4B0082"
+    },
+    {
+      "id": "apprentice",
+      "name": "画家見習い",
+      "nameJa": "画家見習い",
+      "nameEn": "Painter's Apprentice",
+      "role": "suspect",
+      "description": "画家のアシスタント。母親の治療費のために働く。犯人。",
+      "assetKey": "apprentice_default",
+      "color": "#FF8C00"
+    },
+    {
+      "id": "white_flower",
+      "name": "白い花",
+      "nameJa": "白い花",
+      "nameEn": "White Flower",
+      "role": "victim",
+      "description": "人型植物。画家のスランプの原因。自ら燃えることを提案した。",
+      "assetKey": "white_flower_default",
+      "color": "#FFFFFF"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "sceneId": "intro",
+  "title": "導入",
+  "background": "garden_aftermath",
+  "bgm": "bgm_investigation",
+  "dialogues": [
+    {
+      "speaker": "narrator",
+      "text": "あなたは警察犬のヨウ・デンジャー・ドッグです。警察と協力しながら事件を解決に導いてください。"
+    },
+    {
+      "speaker": "police",
+      "text": "相棒！準備はいいですか？それじゃあ、行きますよ。"
+    },
+    {
+      "type": "credit",
+      "title": "Fire in the garden",
+      "subtitle": "ある豪邸の庭園で火事が起きた。犯人は何を目的に庭園を燃やしたのか。"
+    }
+  ],
+  "onComplete": {
+    "type": "set_flag",
+    "flag": "chapter1_started",
+    "value": true
+  },
+  "nextScene": "chapter1_intro"
+}

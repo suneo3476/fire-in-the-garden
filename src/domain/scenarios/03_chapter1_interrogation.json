@@ -1,0 +1,72 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "sceneId": "chapter1_interrogation_select",
+  "title": "第1章 事情聴取",
+  "background": "interrogation_room",
+  "bgm": "bgm_investigation",
+  "type": "selection",
+  "prompt": "事情聴取する相手を選んでください",
+  "choices": [
+    {
+      "id": "interrogate_master",
+      "text": "庭園の主",
+      "condition": {
+        "type": "flag_equals",
+        "flag": "interrogated_master",
+        "value": false
+      },
+      "disabledText": "もう話すことはない",
+      "nextScene": "interrogation_master"
+    },
+    {
+      "id": "interrogate_firefighter",
+      "text": "消防士",
+      "condition": {
+        "type": "flag_equals",
+        "flag": "interrogated_firefighter",
+        "value": false
+      },
+      "disabledText": "何か喋れって…何を？",
+      "nextScene": "interrogation_firefighter"
+    },
+    {
+      "id": "interrogate_gardener",
+      "text": "庭師",
+      "condition": {
+        "type": "flag_equals",
+        "flag": "interrogated_gardener",
+        "value": false
+      },
+      "disabledText": "もう話すことはない",
+      "nextScene": "interrogation_gardener"
+    },
+    {
+      "id": "interrogate_painter",
+      "text": "画家",
+      "condition": {
+        "type": "flag_equals",
+        "flag": "interrogated_painter",
+        "value": false
+      },
+      "disabledText": "何か喋れって…何を？",
+      "nextScene": "interrogation_painter"
+    },
+    {
+      "id": "interrogate_apprentice",
+      "text": "画家見習い",
+      "condition": {
+        "type": "flag_equals",
+        "flag": "interrogated_apprentice",
+        "value": false
+      },
+      "disabledText": "もう話すことはない",
+      "nextScene": "interrogation_apprentice"
+    }
+  ],
+  "onAllComplete": {
+    "type": "set_flag",
+    "flag": "all_interrogations_done",
+    "value": true,
+    "nextScene": "chapter2_intro"
+  }
+}

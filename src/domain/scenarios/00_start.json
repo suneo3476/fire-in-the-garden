@@ -1,0 +1,33 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "sceneId": "start",
+  "title": "スタート画面",
+  "background": "start_screen",
+  "bgm": "bgm_title",
+  "elements": [
+    {
+      "type": "interactive_character",
+      "characterId": "police",
+      "position": "center",
+      "tapEnabled": true,
+      "randomDialogues": [
+        "さあ相棒、出勤命令ですよ。",
+        "ほらほら、そろそろ行かなくちゃ。",
+        "おやつが欲しい？事件を解決できたらね。",
+        "おやおや、今日は悪い子ですか？"
+      ]
+    },
+    {
+      "type": "button",
+      "id": "start_button",
+      "text": "出勤",
+      "position": "bottom_center",
+      "action": {
+        "type": "set_flag",
+        "flag": "game_started",
+        "value": true
+      },
+      "nextScene": "intro"
+    }
+  ]
+}
